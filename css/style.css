@@ -20,6 +20,7 @@
   /* Chrome < 4, Legacy iOS */
 }
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 body {
@@ -67,6 +68,16 @@ p {
 .header__link:focus {
   color: #070707;
 }
+@media (max-width: 992px) {
+  .header {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
 .denis {
   padding-bottom: 10.3rem;
 }
@@ -79,6 +90,32 @@ p {
 .denis__up > * {
   display: inline-block;
   width: 17%;
+}
+.denis__up .hide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 6.8rem;
+  left: -100%;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.denis__up .hide p {
+  font-family: 'Gilroy-Bold';
+  font-size: 3.4rem;
+  margin-bottom: 7.5rem;
+}
+.denis__up .hide p a {
+  text-decoration: none;
+  color: #090909;
+}
+.denis__up .hide .image {
+  text-align: right;
+  margin-top: 10rem;
+}
+.denis__up .hide .image img {
+  width: 3rem;
+  margin-right: 3rem;
 }
 .denis__up h1 {
   font-family: "Gilroy-Bold";
@@ -95,6 +132,66 @@ p {
 .denis__up .lang {
   text-align: right;
 }
+@media (max-width: 992px) {
+  .denis {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .denis {
+    padding: 0;
+  }
+  .denis .denis__up {
+    display: block;
+    position: relative;
+    padding-top: 6.5em;
+    padding-bottom: 3rem;
+  }
+  .denis .denis__up h1 {
+    margin-bottom: 2.3rem;
+  }
+  .denis .denis__up .denis__data {
+    margin-bottom: 3rem;
+  }
+  .denis .denis__up .visible {
+    left: 0;
+    transition: 0.2s;
+  }
+  .denis .denis__up .burger {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    top: 6.8rem;
+    right: 3rem;
+  }
+  .denis .denis__up .burger .line {
+    display: block;
+    border: none;
+    margin: 0.6rem auto;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #000;
+    transition: 0.2s;
+  }
+  .denis .denis__up .burger .line.turned {
+    transition: 0.2s;
+  }
+  .denis .denis__up .burger .line.turned:first-child {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  .denis .denis__up .burger .line.turned:nth-child(even) {
+    opacity: 0;
+  }
+  .denis .denis__up .burger .line.turned:last-child {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+  .denis .denis__up > * {
+    display: block;
+  }
+  .denis .lang {
+    display: none;
+  }
+}
 .about {
   padding: 12rem 0 10.5rem;
   background-color: #F6F6F6;
@@ -104,6 +201,16 @@ p {
 }
 .about p {
   margin-bottom: 5.5rem;
+}
+@media (max-width: 992px) {
+  .about {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 8rem 3rem 7.6rem;
+  }
 }
 .skills {
   padding: 9rem 0 11rem;
@@ -144,6 +251,19 @@ p {
 .skills .stars img:last-child {
   margin-right: 0;
 }
+@media (max-width: 992px) {
+  .skills {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    padding: 8.3rem 0 9.5rem;
+  }
+  .skills .skills__wrapper {
+    display: block;
+  }
+}
 .portfolio {
   background-color: #F6F6F6;
   padding: 11.3rem 0 9.6rem;
@@ -151,11 +271,19 @@ p {
 .portfolio__title {
   margin-bottom: 4.6rem;
 }
+.portfolio img {
+  max-width: 100%;
+}
 .portfolio p {
   margin: 4.45rem 0 9.88rem;
 }
 .portfolio p:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .portfolio {
+    padding: 10rem 2rem 10rem;
+  }
 }
 .contacts {
   padding: 11.3rem 0 12.3rem;
@@ -168,6 +296,7 @@ p {
 }
 .contacts__btn {
   display: block;
+  cursor: pointer;
   margin: 0 auto 8.5rem;
   width: 18rem;
   height: 4.2rem;
