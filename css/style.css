@@ -144,3 +144,51 @@ p {
 .skills .stars img:last-child {
   margin-right: 0;
 }
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 11.3rem 0 9.6rem;
+}
+.portfolio__title {
+  margin-bottom: 4.6rem;
+}
+.portfolio p {
+  margin: 4.45rem 0 9.88rem;
+}
+.portfolio p:last-child {
+  margin-bottom: 0;
+}
+.contacts {
+  padding: 11.3rem 0 12.3rem;
+}
+.contacts__title {
+  margin-bottom: 2rem;
+}
+.contacts p {
+  margin-bottom: 3rem;
+}
+.contacts__btn {
+  display: block;
+  margin: 0 auto 8.5rem;
+  width: 18rem;
+  height: 4.2rem;
+  background-color: #070707;
+  border-radius: 2rem;
+  font-family: 'Gilroy-Bold';
+  font-size: 1.8rem;
+  color: #fff;
+}
+.contacts__links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 34.2rem;
+  margin: 0 auto 4.5rem;
+}
+.contacts__link {
+  display: block;
+  max-width: 4rem;
+}
+.contacts .like {
+  font-size: 1.4rem;
+  line-height: 1.652rem;
+  color: #828282;
+}

@@ -9,6 +9,15 @@
 		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+.bold() {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.123rem;
+}
+@bgc: #F6F6F6;
+@grey: #828282;
+@black: #070707;
 html {
     font-size: 10px;
 }
@@ -32,10 +41,7 @@ h2 {
     text-align: center;
 }
 p {
-    font-weight: 800;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 2.123rem;
+    .bold()
 }
 
 .header {
@@ -49,15 +55,15 @@ p {
         justify-content: space-between;
         align-items: center;
         list-style: none;
-        border-bottom: 1px solid #828282;
+        border-bottom: 1px solid @grey;
     }
     &__link {
         text-decoration: none;
-        color: #828282;
+        color: @grey;
         font-size: 1.8rem;
         font-family: 'Gilroy-Bold';
         &:focus {
-            color: #070707;
+            color: @black;
         }
     }
 
@@ -95,7 +101,7 @@ p {
 
 .about {
     padding: 12rem 0 10.5rem;
-    background-color: #F6F6F6;
+    background-color: @bgc;
     &__title {
         margin-bottom: 1.7rem;
     }
@@ -118,7 +124,7 @@ p {
         margin: 0 auto 4rem;
         font-family: 'Gilroy-Bold';
         font-size: 1.4rem;
-        color: #828282;
+        color: @grey;
     }
     &__item {
         text-align: center;
@@ -144,5 +150,55 @@ p {
             }
         }
         
+    }
+}
+
+.portfolio {
+    background-color: @bgc;
+    padding: 11.3rem 0 9.6rem;
+    &__title {
+        margin-bottom: 4.6rem;
+    }
+    p {
+        margin: 4.45rem 0 9.88rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts {
+    padding: 11.3rem 0 12.3rem;
+    &__title {
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto 8.5rem;
+        width: 18rem;
+        height: 4.2rem;
+        background-color: @black;
+        border-radius: 2rem;
+        font-family: 'Gilroy-Bold';
+        font-size: 1.8rem;
+        color: #fff;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        max-width: 34.2rem;
+        margin: 0 auto 4.5rem;
+    }
+    &__link {
+        display: block;
+        max-width: 4rem;
+    }
+    .like {
+        font-size: 1.4rem;
+        line-height: 1.652rem;
+        color: @grey;
     }
 }
