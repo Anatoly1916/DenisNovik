@@ -92,33 +92,7 @@ p {
             display: inline-block;
             width: 17%;
         }
-        .hide {
-            position: absolute;
-            width: 100%;
-            height: 100vh;
-            top: 6.8rem;
-            left: -100%;
-            background-color: #fff;
-            transition: 0.2s;
-            p {
-                font-family: 'Gilroy-Bold';
-                font-size: 3.4rem;
-                margin-bottom: 7.5rem;
-                a {
-                    text-decoration: none;
-                    color: #090909;
-                }
-            }
-            .image {
-                text-align: right;
-                margin-top: 10rem;
-                    img {
-                        width: 3rem;
-                        margin-right: 3rem;
-                }
-                
-            }
-        }
+
 
         h1 {
             font-family: "Gilroy-Bold";
@@ -156,12 +130,11 @@ p {
                 margin-bottom: 3rem;
             }
             .visible {
-                // transform: translateX(100%);
                 left: 0;
                 transition: 0.2s;
             }
             .burger {
-                position: absolute;
+                position: fixed;
                 z-index: 10;
                 cursor: pointer;
                 top: 6.8rem;
@@ -194,6 +167,43 @@ p {
         }
         .lang {
             display: none;
+        }
+        .hide {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: -100%;
+            padding-top: 3rem;
+            background-color: #fff;
+            transition: 0.2s;
+            .header__list {
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding-top: 3rem;
+                border: none;
+                li {
+                    font-family: 'Gilroy-Bold';
+                    margin-bottom: 6rem;
+                    padding-left: 2.6rem;
+                    a {
+                        text-decoration: none;
+                        color: @grey;
+                        font-size: 3.4rem;
+                    }
+                }
+
+            }
+            .lang {
+                text-align: right;
+                    img {
+                        width: 3rem;
+                        margin-right: 3rem;
+                }
+                
+            }
+
         }
     }
 }

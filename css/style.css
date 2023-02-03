@@ -91,32 +91,6 @@ p {
   display: inline-block;
   width: 17%;
 }
-.denis__up .hide {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 6.8rem;
-  left: -100%;
-  background-color: #fff;
-  transition: 0.2s;
-}
-.denis__up .hide p {
-  font-family: 'Gilroy-Bold';
-  font-size: 3.4rem;
-  margin-bottom: 7.5rem;
-}
-.denis__up .hide p a {
-  text-decoration: none;
-  color: #090909;
-}
-.denis__up .hide .image {
-  text-align: right;
-  margin-top: 10rem;
-}
-.denis__up .hide .image img {
-  width: 3rem;
-  margin-right: 3rem;
-}
 .denis__up h1 {
   font-family: "Gilroy-Bold";
   font-size: 4.734rem;
@@ -158,7 +132,7 @@ p {
     transition: 0.2s;
   }
   .denis .denis__up .burger {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     cursor: pointer;
     top: 6.8rem;
@@ -190,6 +164,40 @@ p {
   }
   .denis .lang {
     display: none;
+  }
+  .denis .hide {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    padding-top: 3rem;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+  .denis .hide .header__list {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+    border: none;
+  }
+  .denis .hide .header__list li {
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 6rem;
+    padding-left: 2.6rem;
+  }
+  .denis .hide .header__list li a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 3.4rem;
+  }
+  .denis .hide .lang {
+    text-align: right;
+  }
+  .denis .hide .lang img {
+    width: 3rem;
+    margin-right: 3rem;
   }
 }
 .about {
