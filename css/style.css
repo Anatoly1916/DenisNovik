@@ -60,12 +60,14 @@ p {
   border-bottom: 1px solid #828282;
 }
 .header__link {
-  text-decoration: none;
-  color: #828282;
   font-size: 1.8rem;
   font-family: 'Gilroy-Bold';
 }
-.header__link:focus {
+.header__link a {
+  text-decoration: none;
+  color: #828282;
+}
+.header__link a:focus {
   color: #070707;
 }
 @media (max-width: 992px) {
@@ -103,7 +105,8 @@ p {
   font-size: 1.8rem;
   line-height: 21.23px;
 }
-.denis__up .lang {
+.denis__up .lang,
+.denis__up .hide__lang {
   text-align: right;
 }
 @media (max-width: 992px) {
@@ -162,7 +165,8 @@ p {
   .denis .denis__up > * {
     display: block;
   }
-  .denis .lang {
+  .denis .lang,
+  .denis .ru-eng {
     display: none;
   }
   .denis .hide {
@@ -175,19 +179,20 @@ p {
     background-color: #fff;
     transition: 0.2s;
   }
-  .denis .hide .header__list {
+  .denis .hide .inner {
     display: block;
     width: 100%;
-    height: 100%;
     padding-top: 3rem;
     border: none;
   }
-  .denis .hide .header__list li {
+  .denis .hide .inner li {
     font-family: 'Gilroy-Bold';
+    display: block;
     margin-bottom: 6rem;
     padding-left: 2.6rem;
+    text-align: left;
   }
-  .denis .hide .header__list li a {
+  .denis .hide .inner li a {
     text-decoration: none;
     color: #828282;
     font-size: 3.4rem;
@@ -195,7 +200,7 @@ p {
   .denis .hide .lang {
     text-align: right;
   }
-  .denis .hide .lang img {
+  .denis .hide .lang .ru-eng {
     width: 3rem;
     margin-right: 3rem;
   }
