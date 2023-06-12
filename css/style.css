@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/abhayalibre/v13/e3tmeuGtX-Co5MNzeAOqinEgew.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3tmeuGtX-Co5MNzeAOqinEgew.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Abhaya Libre';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/abhayalibre/v13/e3t5euGtX-Co5MNzeAOqinEY22_yqg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/abhayalibre/v14/e3t5euGtX-Co5MNzeAOqinEY22_yqg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Gilroy-Bold';
@@ -164,6 +164,9 @@ p {
   }
   .denis .denis__up > * {
     display: block;
+  }
+  .denis .denis__low img {
+    width: 100%;
   }
   .denis .lang,
   .denis .ru-eng {
